@@ -11,3 +11,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     justify-content: center; 
     align-items: center; 
 }
+
+#display-data{
+    background-color: aquamarine;
+    display:block;
+    border: 10cap;
+}

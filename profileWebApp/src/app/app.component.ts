@@ -14,11 +14,4 @@ import { GetdataserviceService } from './service/getdataservice.service';
 export class AppComponent {
   title = 'profileWebApp';
 
-//   _makeapicallSER:GetdataserviceService;
-
-//  constructor(_makecallREF:GetdataserviceService)
-//   {
-//    this._makeapicallSER = _makecallREF;
-//    this._makeapicallSER.getProfileData();
-  
 }

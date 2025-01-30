@@ -1,11 +1,15 @@
-
-  
-    <div id = "header-adjust">
-        <button (click)="_makeapicallSER.getProfileData()">Get the details</button> 
-<table border="1">
-    <tr>
-        <td>{{_makeapicallSER.getDetails.id}}</td>    
-    </tr>
-</table>
+ 
+<div id = "header-adjust">
+    <div id="display-data">
+        <h2 align="center">-----------------------------ANU FRANCIS ----------------------</h2>
+            
+        <p>
+           I am a {{_makeapicallSER.getDetails.aboutMe}} and 
+           having total  {{_makeapicallSER.getDetails.experience}} in IT Industry. 
+           I have {{_makeapicallSER.getDetails.achievements}}.
+           My hobbies are {{_makeapicallSER.getDetails.hobbies}} and Reading Books. <br/>
+           Also, My skill set are in {{_makeapicallSER.getDetails.skillSet}} and Microservices.
+           Moreover,  I have attended {{_makeapicallSER.getDetails.trainingList}}.
+        </p>
+    </div>
 </div>
-  

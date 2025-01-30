@@ -9,6 +9,7 @@ import { GetdataserviceService } from '../../service/getdataservice.service';
 })
 export class AboutmeComponent {
   _makeapicallSER:GetdataserviceService;
+    data:any;
   
     constructor(_makecallREF:GetdataserviceService)
      {
