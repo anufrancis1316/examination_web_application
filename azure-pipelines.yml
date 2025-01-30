@@ -32,6 +32,12 @@ steps:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'acr_profile_webapp_service_connection'
+    repository: 'profilewebappazurecontainerregistry'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 # - task: PublishBuildArtifacts@1
 #   inputs:
 #      PathtoPublish: 'dist'
