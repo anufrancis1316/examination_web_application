@@ -25,12 +25,12 @@ steps:
   displayName: 'npm install and build'
 
 
-- task: Docker@2
-  inputs:
-    containerRegistry: 'docker_profile_webapp_service_connection'
-    repository: 'anufrancisdocker/profile-webapp'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+# - task: Docker@2
+#   inputs:
+#     containerRegistry: 'docker_profile_webapp_service_connection'
+#     repository: 'anufrancisdocker/profile-webapp'
+#     command: 'buildAndPush'
+#     Dockerfile: '**/Dockerfile'
 
 - task: Docker@2
   inputs:
@@ -38,6 +38,7 @@ steps:
     repository: 'profilewebappazurecontainerregistry'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    
 # - task: PublishBuildArtifacts@1
 #   inputs:
 #      PathtoPublish: 'dist'
